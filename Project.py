@@ -7,7 +7,6 @@ import plotly.graph_objects as go
 import time
 from PIL import Image
 import pickle 
-import statsmodels.api as sm
 
 #Import data
 data = pd.read_csv('student-mat.csv', sep=';')
