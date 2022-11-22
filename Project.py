@@ -131,13 +131,13 @@ st.text('Based on top 10 features that affects academic performance, \n You can 
 st.text('Please fill this quick survey and you will get your answer immediately!')
 
 #Survey Section
-Medu = st.selectbox('Mother Education Level', ['No Selection','None', 'Primary', 'Secondary', 'Higher'])
-Fedu = st.selectbox('Father Education Level', ['No Selection','None', 'Primary', 'Secondary', 'Higher'])
-health = st.selectbox('Current Health State', ['No Selection','very bad', 'bad', 'not bad', 'good', 'very good'])
+Medu = st.selectbox('Mother Education Level', ['None', 'Primary', 'Secondary', 'Higher'])
+Fedu = st.selectbox('Father Education Level', ['None', 'Primary', 'Secondary', 'Higher'])
+health = st.selectbox('Current Health State', ['very bad', 'bad', 'not bad', 'good', 'very good'])
 absences = st.number_input('Number of Absences', min_value=0, max_value=93)
 age = st.number_input('Your age', min_value=15, max_value=22)
-freetime = st.selectbox('Freetime after School', ['No Selection','very low', 'low', 'normal', 'high', 'very high'])
-goout = st.selectbox('Going Out with Friends', ['No Selection','very low', 'low', 'normal', 'high', 'very high'])
+freetime = st.selectbox('Freetime after School', ['very low', 'low', 'normal', 'high', 'very high'])
+goout = st.selectbox('Going Out with Friends', ['very low', 'low', 'normal', 'high', 'very high'])
 G1 = st.number_input('Fisrt Period Grade', min_value=0, max_value=20)
 G2 = st.number_input('Second Period Grade', min_value=0, max_value=20)
 failures = st.number_input('Past Class Failures', min_value=0, max_value=4)
