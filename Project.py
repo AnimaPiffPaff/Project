@@ -177,7 +177,7 @@ if predict:
 #    timer.empty()
     html_string = """
             <audio controls autoplay>
-              <source src="https://storage.cloudconvert.com/tasks/340e37f9-68b3-4318-a75e-5d9fb275c0e9/mixkit-drum-roll-566.mp3?AWSAccessKeyId=cloudconvert-production&Expires=1669028073&Signature=ZLZPSMpARklvHGlbtrFGa638cPw%3D&response-content-disposition=attachment%3B%20filename%3D%22mixkit-drum-roll-566.mp3%22&response-content-type=audio%2Fmpeg" type="audio/mp3">
+              <source src="https://assets.mixkit.co/sfx/preview/mixkit-drum-roll-566.mp3" type="audio/mp3">
             </audio>
             """
     sound.markdown(html_string, unsafe_allow_html=True)
