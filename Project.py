@@ -165,16 +165,8 @@ audio_bytes_three = audio_file_three.read()
 if predict:
     ph = st.empty()
     sound = st.empty()
-#    timer = st.empty()
     original_title = '<p style="font-family:Courier; color:#87CEEB; font-size: 30px;">Are You Ready?</p>'
     ph.markdown(original_title, unsafe_allow_html=True)
-#    ph.markdown('## Are You Ready?')
-#    N = 3
-#    for secs in range(N,0,-1):
-#        mm, ss = secs//60, secs%60
-#        timer.metric("Countdown", f"{mm:02d}:{ss:02d}")
-#        time.sleep(1)
-#    timer.empty()
     html_string = """
             <audio controls autoplay>
               <source src="https://assets.mixkit.co/sfx/preview/mixkit-drum-roll-566.mp3" type="audio/mp3">
@@ -189,7 +181,6 @@ if predict:
     if pred == 0:
         st.audio(audio_bytes_one, format='audio/ogg')
         st.write('### You will fail! 😿')
-        #st.snow()
     elif pred == 1:
         st.audio(audio_bytes_three, format='audio/ogg')
         st.write('### You will Pass! 🥲')
