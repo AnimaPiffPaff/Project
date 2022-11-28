@@ -127,7 +127,7 @@ image_one = Image.open('graph.png')
 
 #Third Image
 st.image(image_one, caption='Top 10 most affecting features.')
-st.text('Based on top 10 features that affects academic performance, \n You can use one of our most successful models, to predict your performance:')
+st.text('Based on top 10 features that affects academic performance, \n You can use one of our most successful models to predict your performance:')
 st.text('Please fill this quick survey and you will get your answer immediately!')
 
 #Survey Section
