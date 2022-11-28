@@ -84,16 +84,16 @@ if option == 'Histogram':
     st.plotly_chart(hist, use_container_width=True)
     button = st.button('Description')
     if button:
-        st.text('This Histogram describes how the value of the final grade \n is distributed along the population (in this case students), \n we can notice that the population follows Normal distribution.')
+        st.text('This Histogram describes how the value of the final grade \n is distributed along the population (in this case students), \n we can notice that the population follows a Normal distribution.')
 if option == 'Scatter':
     st.plotly_chart(scat, use_container_width=True)
     button = st.button('Description')
     if button:
-        st.text('Scatter plots gives a detailed visualisation of how the first grades \n can predict the upcoming behavior of the student, \n on the other hand another factor may also interfere in the process: Mother Education. \n When colors are more darker means a higher level of mother educational level. ')
+        st.text('Scatter plots give a detailed visualisation of how the first grades \n can predict the upcoming behavior of the student, \n on the other hand another factor may also interfere in the process: Mother Education. \n Darker colors indicate a lower mother educational level. ')
 if option == 'Animated Scatter':
     st.plotly_chart(animscat, use_container_width=True)
     button = st.button('Description')
-    st.text('The animated scatter takes the same concept of the classical scatter plot, \n but with an additional changing factor, the age. \n By clicking on the play button, you can visualize the transformation of the given population \n in terms of age.')
+    st.text('The animated scatter takes the same concept of the classical scatter plot, \n but with an additional changing factor: age. \n By clicking on the play button, you can visualize the transformation of the given population \n in terms of age.')
 if option == 'Funnel':
     st.plotly_chart(funnel, use_container_width=True)
     button = st.button('Description')
@@ -103,19 +103,19 @@ if option == '3D Figure':
     st.plotly_chart(fig_3d, use_container_width=True)
     button = st.button('Description')
     if button:
-        st.text('The entire given informations are visualized in this three dimensional figure.\n It is hard to gain any insights, as it is chaotic and almost randomly distributed.')
+        st.text('The entire given information is visualized in this three dimensional figure.\n It is hard to gain any insights as it is chaotic and almost randomly distributed.')
 if option == 'Heatmap':
     st.plotly_chart(heatmap, use_container_width=True)
     button = st.button('Description')
     if button:
-        st.text('This graph is called heatmap. We can see how age can affect the overall performance, \n  as if age increase the number of students having a higher grade decrease.')        
+        st.text('This graph is called heatmap. We can see how age can affect the overall performance, \n  as age increases the number of students having a higher grade decreases.')        
 
 #Second Image
 image_two = Image.open('success.jpg')
 st.image(image_two, caption='What to do you need to measure success?')
 
 #Part 2 Description
-st.text('In order to fill the gaps in student academic performance, several technologies in \n machine learning enter the field of pedagogy. \n One of the method used in this article is a multi class classification techniques \n that helps predict the outcome of the student performance!')
+st.text('In order to fill the gaps in student academic performance, several technologies in \n machine learning were introduced to the field of pedagogy. \n One of the methods used in this article is multi class classification technique \n that helps predict the outcome of the student performance!')
 st.text('Three models are trained, and tuned.')
 
 #Loading Pre-Trained Model (Logistic Regression)
@@ -127,7 +127,7 @@ image_one = Image.open('graph.png')
 
 #Third Image
 st.image(image_one, caption='Top 10 most affecting features.')
-st.text('Based on top 10 features that affects academic performance, \n You can use one of our most successful model, to predict your own performance:')
+st.text('Based on top 10 features that affects academic performance, \n You can use one of our most successful models, to predict your performance:')
 st.text('Please fill this quick survey and you will get your answer immediately!')
 
 #Survey Section
