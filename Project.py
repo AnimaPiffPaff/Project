@@ -9,7 +9,7 @@ from PIL import Image
 import pickle 
 
 #Import data
-data = pd.read_csv('student-mat.csv', sep=';')
+data = pd.read_csv('student-mat.csv', sep=';').sort_values(by=['age'], ascending=True)
 pd.set_option('display.max_columns',None)
 data.head()
 
