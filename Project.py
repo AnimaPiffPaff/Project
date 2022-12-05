@@ -54,12 +54,6 @@ import streamlit as st
 
 st.markdown("<h1 style='text-align: center; color: grey;'>Student Performance</h1>", unsafe_allow_html=True)
 
-
-#First Image
-image_one = Image.open('Measure.jpg')
-st.image(image_one, caption='Using Science to Track Student Behavior')
-
-
 #First Image
 image_one = Image.open('Measure.jpg')
 st.image(image_one, caption='Using Science to Track Student Behavior')
