@@ -48,10 +48,9 @@ def draw_3dfig(data):
 
 
 #Streamlit section
-
-#Title & Page description
 import streamlit as st
 
+#Title & Page description
 st.markdown("<h1 style='text-align: left; color: grey;'>Student Performance</h1>", unsafe_allow_html=True)
 
 #First Image
