@@ -52,7 +52,7 @@ def draw_3dfig(data):
 #Title & Page description
 import streamlit as st
 
-st.markdown("<h1 style='text-align: center; color: grey;'>Student Performance</h1>", unsafe_allow_html=True)
+st.markdown("<h1 style='text-align: left; color: grey;'>Student Performance</h1>", unsafe_allow_html=True)
 
 #First Image
 image_one = Image.open('Measure.jpg')
