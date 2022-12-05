@@ -50,7 +50,18 @@ def draw_3dfig(data):
 #Streamlit section
 
 #Title & Page description
-st.markdown("<h1 style='text-align: center; color: grey;'>Student Performance</h1>", unsafe_allow_html=True)
+import streamlit as st
+
+col1, col2 = st.columns(2)
+
+with col1:
+    st.markdown("<h1 style='text-align: center; color: grey;'>Student Performance</h1>", unsafe_allow_html=True)
+
+with col2:
+    #First Image
+    image_one = Image.open('Measure.jpg')
+    st.image(image_one, caption='Using Science to Track Student Behavior')
+
 
 #First Image
 image_one = Image.open('Measure.jpg')
