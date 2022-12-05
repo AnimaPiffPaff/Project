@@ -50,7 +50,7 @@ def draw_3dfig(data):
 #Streamlit section
 
 #Title & Page description
-st.markdown('# Student Performance ')
+st.markdown("<h1 style='text-align: center; color: grey;'>Student Performance</h1>", unsafe_allow_html=True)
 
 #First Image
 image_one = Image.open('Measure.jpg')
